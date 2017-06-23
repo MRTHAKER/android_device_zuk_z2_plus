@@ -66,6 +66,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dev.pm.dyn_samplingrate=1 \
     ro.qcom.ad=1 \
+    debug.sf.enable_hwc_vds=1 \
     ro.qcom.ad.calib.data=/vendor/etc/calib.cfg \
     ro.qcom.ad.sensortype=2 \
     ro.vendor.display.cabl=2 \
