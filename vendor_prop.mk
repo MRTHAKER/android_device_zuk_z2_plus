@@ -59,7 +59,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CNE | DPM
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.cne.feature=1 \
+    persist.vendor.cne.feature=1 \
     persist.dpm.feature=3
 
 # Display
