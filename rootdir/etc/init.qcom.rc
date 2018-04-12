@@ -352,7 +352,7 @@ service tftp_server /vendor/bin/tftp_server
 service start_hci_filter /vendor/bin/wcnss_filter
     class late_start
     user bluetooth
-    group bluetooth oem_2901 system wakelock
+    group bluetooth diag system wakelock
     disabled
 
 service netmgrd /vendor/bin/netmgrd
