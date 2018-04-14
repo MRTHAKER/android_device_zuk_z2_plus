@@ -265,7 +265,7 @@ on post-fs-data
     #symlink /data/misc/wifi/wpa_supplicant /data/system/wpa_supplicant
 
     # Create directory for modem_config
-    mkdir /data/vendor/modem_config 0550 system radio
+    mkdir /data/vendor/modem_config 0570 radio root
 
     # Create directory for radio
     mkdir /data/vendor/radio 0770 system radio
