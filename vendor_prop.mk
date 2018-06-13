@@ -68,12 +68,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qcom.ad=1 \
     ro.qcom.ad.calib.data=/vendor/etc/calib.cfg \
     ro.qcom.ad.sensortype=2 \
-    ro.qualcomm.cabl=2 \
+    ro.vendor.display.cabl=2 \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=480 \
     sdm.perf_hint_window=50 \
     sdm.debug.disable_rotator_split=1 \
-    sdm.debug.disable_skip_validate=1
+    vendor.display.enable_default_color_mode=1 \
+    vendor.display.disable_skip_validate=1 \
+    vendor.gralloc.enable_fb_ubwc=1
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
