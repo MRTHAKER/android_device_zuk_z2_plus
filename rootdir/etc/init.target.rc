@@ -84,7 +84,7 @@ on property:init.svc.per_mgr=running
 on property:sys.powerctl=*
     stop per_proxy
 
-service qseecomd /vendor/bin/qseecomd
+service vendor.qseecomd /vendor/bin/qseecomd
     class core
     user root
     group root
