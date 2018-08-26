@@ -197,6 +197,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_qcom
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2018-08-01
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
