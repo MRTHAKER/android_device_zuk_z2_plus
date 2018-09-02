@@ -157,7 +157,7 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 TARGET_PROVIDES_KEYMASTER := true
 
 # Lineage Hardware
-BOARD_HARDWARE_CLASS += device/zuk/z2_plus/lineagehw
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
 # Media
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
