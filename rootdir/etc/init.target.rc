@@ -29,9 +29,6 @@
 
 import /vendor/etc/init/hw/init.zuk.rc
 
-on early-init
-    symlink /data/tombstones /tombstones
-
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -51,10 +48,6 @@ on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
 on post-fs-data
-    mkdir /tombstones/modem 0771 system system
-    mkdir /tombstones/lpass 0771 system system
-    mkdir /tombstones/wcnss 0771 system system
-    mkdir /tombstones/dsps 0771 system system
 
 on property:init.svc.bootanim=running
     write /sys/class/leds/wled/brightness 4095
