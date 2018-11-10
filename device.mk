@@ -193,7 +193,8 @@ PRODUCT_PACKAGES += \
     gps.msm8996 \
     libgnss \
     libgnsspps \
-    libcurl
+    libcurl \
+    libsensorndkbridge
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl-qti \
