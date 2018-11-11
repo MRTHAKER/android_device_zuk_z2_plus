@@ -610,10 +610,10 @@ vendor/lib/libthermalclient.so|cad864aac104c21a1957e3e05b2d4c958ee48db8
 vendor/bin/time_daemon|6f93ea342e94f70056c50795627fe4064b1c86c7
 vendor/lib64/libtime_genoff.so|7683a85cae9f17cd535e8960fceda1d6831074a0
 
-# Widevine
-vendor/bin/hw/android.hardware.drm@1.0-service.widevine
-vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
-vendor/lib/libwvhidl.so
+# Widevine - from daisy - PKQ1.180917.001
+vendor/bin/hw/android.hardware.drm@1.1-service.widevine|9743c4ecd0fb8773795bcbfbb406f25616c04129
+vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc|5a01d337c1d375ee24a6c8992ba91f54afb7637e
+vendor/lib64/libwvhidl.so|a3444ac0deb8144a08ba2ed1dad2f2369096c7af
 
 # WiFi
 vendor/bin/cnss-daemon
