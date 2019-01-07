@@ -318,7 +318,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.target.rc \
     init.zuk.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.qcom.early_boot.sh
 
 # RCS
 PRODUCT_PACKAGES += \
