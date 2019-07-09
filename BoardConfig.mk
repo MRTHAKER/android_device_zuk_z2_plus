@@ -17,7 +17,6 @@
 DEVICE_PATH := device/zuk/z2_plus
 
 # Platform
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_BOARD_PLATFORM := msm8996
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno530
 
@@ -127,7 +126,6 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
-TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 6000000
@@ -151,13 +149,9 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_z2_plus
 TARGET_RECOVERY_DEVICE_MODULES := libinit_z2_plus
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
-
-# Lineage Hardware
-BOARD_HARDWARE_CLASS += device/zuk/z2_plus/lineagehw
 
 # Media
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
@@ -176,11 +170,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_USES_MKE2FS := true
 
-# Peripheral manager
-TARGET_PER_MGR_ENABLED := true
-
 # Power
-TARGET_HAS_NO_WIFI_STATS := true
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
 TARGET_USES_INTERACTION_BOOST := true
 
@@ -192,10 +182,6 @@ TARGET_RIL_VARIANT := caf
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
-
-# Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_qcom
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
